@@ -161,19 +161,6 @@ shinyUI(fluidPage(
     
     column(4,
       wellPanel(
-        h3("Submit button"),
-        submitButton("Apply Changes"),
-        hr(),
-        p("Submit buttons have no output. They prevent reactions from occurring until a user clicks the submit button.", style = "color:#888888;"), 
-        a("See Code", class = "btn btn-primary btn-md",  
-          href = "https://garrett.shinyapps.io/submit/")
-      ))  
-  ),
-  
-  fluidRow(
-    
-    column(4,
-      wellPanel(
         textInput("text", label = h3("Text input"), 
                   value = "Enter text..."),
         hr(),
@@ -181,7 +168,7 @@ shinyUI(fluidPage(
         verbatimTextOutput("text"),
         a("See Code", class = "btn btn-primary btn-md",  
           href = "https://garrett.shinyapps.io/text/")
-      ))
+    )) 
   )
 
 ))
