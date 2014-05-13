@@ -29,12 +29,13 @@ shinyUI(fluidPage(
     
     column(4,
       wellPanel(
-        h3("Action Button"),
+        h3("Action button"),
         actionButton("action", label = "Action"),
         hr(),
         p("Current Value:", style = "color:#888888;"), 
         verbatimTextOutput("action"),
-        a("See Code", class = "btn btn-primary btn-md", href = "")
+        a("See Code", class = "btn btn-primary btn-md", 
+          href = "https://garrett.shinyapps.io/action-button/")
       )),
     
     column(4,
@@ -45,7 +46,8 @@ shinyUI(fluidPage(
         hr(),
         p("Current Value:", style = "color:#888888;"), 
         verbatimTextOutput("checkbox"),
-        a("See Code", class = "btn btn-primary btn-md", href = "")
+        a("See Code", class = "btn btn-primary btn-md",  
+          href = "https://garrett.shinyapps.io/checkbox/")
       )),
     
     column(4,
@@ -58,7 +60,8 @@ shinyUI(fluidPage(
         hr(),
         p("Current Values:", style = "color:#888888;"), 
         verbatimTextOutput("checkGroup"),
-        a("See Code", class = "btn btn-primary btn-md", href = "")
+        a("See Code", class = "btn btn-primary btn-md", 
+          href = "https://garrett.shinyapps.io/check-group/")
       ))
   ),
   
@@ -70,7 +73,8 @@ shinyUI(fluidPage(
         hr(),
         p("Current Value:", style = "color:#888888;"), 
         verbatimTextOutput("date"),
-        a("See Code", class = "btn btn-primary btn-md", href = "")
+        a("See Code", class = "btn btn-primary btn-md",  
+          href = "https://garrett.shinyapps.io/date/")
       )),
     
     column(4,
@@ -79,7 +83,8 @@ shinyUI(fluidPage(
         hr(),
         p("Current Values:", style = "color:#888888;"), 
         verbatimTextOutput("dates"),
-        a("See Code", class = "btn btn-primary btn-md", href = "")
+        a("See Code", class = "btn btn-primary btn-md",  
+          href = "https://garrett.shinyapps.io/date-range/")
       )),
     
     column(4,
@@ -88,7 +93,8 @@ shinyUI(fluidPage(
         hr(),
         p("Current Value:", style = "color:#888888;"), 
         verbatimTextOutput("file"),
-        a("See Code", class = "btn btn-primary btn-md", href = "")
+        a("See Code", class = "btn btn-primary btn-md",  
+          href = "https://garrett.shinyapps.io/file/")
       ))
   ),
   
@@ -100,7 +106,8 @@ shinyUI(fluidPage(
         hr(),
         p("Current Value:", style = "color:#888888;"), 
         verbatimTextOutput("num"),
-        a("See Code", class = "btn btn-primary btn-md", href = "")
+        a("See Code", class = "btn btn-primary btn-md",  
+          href = "https://garrett.shinyapps.io/numeric/")
       )),
     
     column(4,
@@ -111,7 +118,8 @@ shinyUI(fluidPage(
         hr(),
         p("Current Values:", style = "color:#888888;"), 
         verbatimTextOutput("radio"),
-        a("See Code", class = "btn btn-primary btn-md", href = "")
+        a("See Code", class = "btn btn-primary btn-md",  
+          href = "https://garrett.shinyapps.io/radio/")
       )),
     
     column(4,
@@ -122,7 +130,8 @@ shinyUI(fluidPage(
         hr(),
         p("Current Value:", style = "color:#888888;"), 
         verbatimTextOutput("select"),
-        a("See Code", class = "btn btn-primary btn-md", href = "")
+        a("See Code", class = "btn btn-primary btn-md",  
+          href = "https://garrett.shinyapps.io/select/")
       ))
   ),
   
@@ -135,18 +144,33 @@ shinyUI(fluidPage(
         hr(),
         p("Current Value:", style = "color:#888888;"), 
         verbatimTextOutput("slider1"),
-        a("See Code", class = "btn btn-primary btn-md", href = "")
+        a("See Code", class = "btn btn-primary btn-md",  
+          href = "https://garrett.shinyapps.io/slider/")
       )),
     
     column(4,
       wellPanel(
-        sliderInput("slider2", label = h3("Slider Range"), min = 0, 
+        sliderInput("slider2", label = h3("Slider range"), min = 0, 
                     max = 100, value = c(25, 75)),
         hr(),
         p("Current Values:", style = "color:#888888;"), 
         verbatimTextOutput("slider2"),
-        a("See Code", class = "btn btn-primary btn-md", href = "")
+        a("See Code", class = "btn btn-primary btn-md",  
+          href = "https://garrett.shinyapps.io/slider/")
       )),
+    
+    column(4,
+      wellPanel(
+        h3("Submit button"),
+        submitButton("Apply Changes"),
+        hr(),
+        p("Submit buttons have no output. They prevent reactions from occurring until a user clicks the submit button.", style = "color:#888888;"), 
+        a("See Code", class = "btn btn-primary btn-md",  
+          href = "https://garrett.shinyapps.io/submit/")
+      ))  
+  ),
+  
+  fluidRow(
     
     column(4,
       wellPanel(
@@ -155,8 +179,9 @@ shinyUI(fluidPage(
         hr(),
         p("Current Value:", style = "color:#888888;"), 
         verbatimTextOutput("text"),
-        a("See Code", class = "btn btn-primary btn-md", href = "")
-      ))  
+        a("See Code", class = "btn btn-primary btn-md",  
+          href = "https://garrett.shinyapps.io/text/")
+      ))
   )
 
 ))
